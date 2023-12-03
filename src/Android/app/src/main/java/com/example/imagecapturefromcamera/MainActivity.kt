@@ -67,7 +67,7 @@ class MainActivity : ComponentActivity() {
             var capturedImageUri by remember {
                 mutableStateOf<Uri>(Uri.EMPTY)
             }
-
+            val viewModel = viewModel<FileViewModel>()
 
             val cameraLauncher =
                 rememberLauncherForActivityResult(ActivityResultContracts.TakePicture()){
@@ -120,7 +120,7 @@ class MainActivity : ComponentActivity() {
                     image.outputStream().use{
                         assets.open("pho.jpg").copyTo(it)
                     }
-                    uploadImage(image)
+                    viewModel.uploadImage(image)
                 }) {
                     Text(text = "Upload Image")
                 }
@@ -188,7 +188,7 @@ fun uploadImage(image: File) {
         .addFormDataPart("file", image.name, requestBody)
         .build()
 
-     val request = Request.Builder().url("http://192.168.1.6/image").post(multipartBody).build()
+     val request = Request.Builder().url("http://192.168.1.6:9191/image").post(multipartBody).build()
     client.newCall(request).enqueue(object : Callback {
         override fun onResponse(call: Call, response: Response) {
             // Xử lý phản hồi từ server khi upload thành công

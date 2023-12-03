@@ -24,6 +24,11 @@ public class ImageDataController {
         return ResponseEntity.status(HttpStatus.OK).body(uploadImage);
     }
 
+
+    /**
+     * @param fileName
+     * @return
+     */
     @GetMapping("/{fileName}")
     public ResponseEntity<?> downloadImage(@PathVariable String fileName){
         byte[] image = service.downloadImage(fileName);

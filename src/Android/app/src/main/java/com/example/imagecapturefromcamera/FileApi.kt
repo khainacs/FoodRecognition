@@ -14,7 +14,7 @@ interface FileApi {
     companion object {
         val instance by lazy {
             Retrofit.Builder().baseUrl(
-                "http://192.168.1.6/image"
+                "http://192.168.155.215:9191/image"
             ).build().create(FileApi::class.java)
         }
     }

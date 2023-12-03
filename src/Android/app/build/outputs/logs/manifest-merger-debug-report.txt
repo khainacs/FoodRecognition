@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:33:9-44:20
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:33:9-44:20
 	android:grantUriPermissions
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:37:13-47
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:37:13-47
 	android:authorities
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:34:13-60
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:34:13-60
 	android:exported
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:36:13-37
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:35:13-62
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:35:13-62
 manifest
-ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\cf23d7effac8da6cdf3eb6857ab21721\transformed\ui-tooling-1.3.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.activity:activity-compose:1.5.1] C:\Users\khain\.gradle\caches\transforms-3\595d3c6093a11bb7381a4e7c795f2c73\transformed\activity-compose-1.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [io.coil-kt:coil-compose:1.4.0] C:\Users\khain\.gradle\caches\transforms-3\3e12dfe9135628a023ba7afd08c979e6\transformed\coil-compose-1.4.0\AndroidManifest.xml:2:1-9:12
@@ -67,35 +67,39 @@ MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\khain\.gradle\caches\trans
 MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\khain\.gradle\caches\transforms-3\2be91ff78f9689a0b56b35e903714b0b\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\khain\.gradle\caches\transforms-3\9a985b56205ea3f71ce6daf27b5e7b10\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\khain\.gradle\caches\transforms-3\733bfb82eb7a85fe547110e98cc56c45\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:1-48:12
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:1-48:12
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:1-48:12
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:1-48:12
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:1-48:12
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:1-48:12
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:5:5-64
+ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:5:5-65
 	android:name
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:5:22-62
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:5:22-62
+uses-feature#android.hardware.camera.any
+ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:6:4-62
+	android:name
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:6:18-60
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:7:5-66
+ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:7:22-64
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:9:5-46:19
+ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:9:5-46:19
 MERGED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\cf23d7effac8da6cdf3eb6857ab21721\transformed\ui-tooling-1.3.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\cf23d7effac8da6cdf3eb6857ab21721\transformed\ui-tooling-1.3.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\13f50d7a162585dee6da2873d4bdad1c\transformed\ui-test-manifest-1.3.0\AndroidManifest.xml:22:5-26:19
@@ -111,49 +115,49 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\khain\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\khain\.gradle\caches\transforms-3\e16c59b1e48c239ca2936c03d482d39b\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:15:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:12:9-54
 	android:roundIcon
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:16:9-54
 	tools:targetApi
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:19:9-29
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:19:9-29
 	android:icon
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:18:9-60
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:18:9-60
 	android:dataExtractionRules
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:11:9-65
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:11:9-65
 	android:usesCleartextTraffic
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:13:9-44
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:13:9-44
 activity#com.example.imagecapturefromcamera.MainActivity
-ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:20:9-30:20
+ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:20:9-30:20
 	android:label
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:23:13-45
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:23:13-45
 	android:exported
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:22:13-36
 	android:theme
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:24:13-64
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:24:13-64
 	android:name
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:21:13-41
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:21:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:28:27-74
 uses-sdk
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
 MERGED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\cf23d7effac8da6cdf3eb6857ab21721\transformed\ui-tooling-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\cf23d7effac8da6cdf3eb6857ab21721\transformed\ui-tooling-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity-compose:1.5.1] C:\Users\khain\.gradle\caches\transforms-3\595d3c6093a11bb7381a4e7c795f2c73\transformed\activity-compose-1.5.1\AndroidManifest.xml:20:5-22:41
@@ -258,22 +262,22 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\khain\.gradle\ca
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\khain\.gradle\caches\transforms-3\9a985b56205ea3f71ce6daf27b5e7b10\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\khain\.gradle\caches\transforms-3\733bfb82eb7a85fe547110e98cc56c45\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\khain\.gradle\caches\transforms-3\733bfb82eb7a85fe547110e98cc56c45\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:39:13-42:19
+ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:39:13-42:19
 	android:resource
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:41:17-54
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:41:17-54
 	android:name
-		ADDED from C:\Users\khain\AndroidStudioProjects\image_capture_from_camera\app\src\main\AndroidManifest.xml:40:17-67
+		ADDED from C:\Users\khain\src\ICOOK\src\Android\app\src\main\AndroidManifest.xml:40:17-67
 activity#androidx.compose.ui.tooling.PreviewActivity
 ADDED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\cf23d7effac8da6cdf3eb6857ab21721\transformed\ui-tooling-1.3.0\AndroidManifest.xml:23:9-25:39
 	android:exported
