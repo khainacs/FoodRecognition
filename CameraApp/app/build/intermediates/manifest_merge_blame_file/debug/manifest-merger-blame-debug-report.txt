@@ -1,0 +1,200 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.plcoding.cameraxguide"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-feature
+11-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:5:5-7:36
+12        android:name="android.hardware.camera"
+12-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:6:9-47
+13        android:required="false" />
+13-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:7:9-33
+14
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:9:5-65
+15-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:9:22-62
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:10:5-71
+16-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:10:22-68
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:11:5-67
+17-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:11:22-64
+18
+19    <queries>
+19-->[androidx.camera:camera-extensions:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\6122e6ef8d9f31f278e53bce812ed0bf\transformed\camera-extensions-1.3.0-rc01\AndroidManifest.xml:22:5-26:15
+20        <intent>
+20-->[androidx.camera:camera-extensions:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\6122e6ef8d9f31f278e53bce812ed0bf\transformed\camera-extensions-1.3.0-rc01\AndroidManifest.xml:23:9-25:18
+21            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+21-->[androidx.camera:camera-extensions:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\6122e6ef8d9f31f278e53bce812ed0bf\transformed\camera-extensions-1.3.0-rc01\AndroidManifest.xml:24:13-86
+21-->[androidx.camera:camera-extensions:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\6122e6ef8d9f31f278e53bce812ed0bf\transformed\camera-extensions-1.3.0-rc01\AndroidManifest.xml:24:21-83
+22        </intent>
+23    </queries>
+24
+25    <permission
+25-->[androidx.core:core:1.10.0] C:\Users\khain\.gradle\caches\transforms-3\3931ad7eb9dd4136015071a12e5891dc\transformed\core-1.10.0\AndroidManifest.xml:22:5-24:47
+26        android:name="com.plcoding.cameraxguide.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.10.0] C:\Users\khain\.gradle\caches\transforms-3\3931ad7eb9dd4136015071a12e5891dc\transformed\core-1.10.0\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.10.0] C:\Users\khain\.gradle\caches\transforms-3\3931ad7eb9dd4136015071a12e5891dc\transformed\core-1.10.0\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.plcoding.cameraxguide.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.10.0] C:\Users\khain\.gradle\caches\transforms-3\3931ad7eb9dd4136015071a12e5891dc\transformed\core-1.10.0\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.10.0] C:\Users\khain\.gradle\caches\transforms-3\3931ad7eb9dd4136015071a12e5891dc\transformed\core-1.10.0\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:13:5-36:19
+32        android:allowBackup="true"
+32-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:14:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.10.0] C:\Users\khain\.gradle\caches\transforms-3\3931ad7eb9dd4136015071a12e5891dc\transformed\core-1.10.0\AndroidManifest.xml:28:18-86
+34        android:dataExtractionRules="@xml/data_extraction_rules"
+34-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:15:9-65
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:fullBackupContent="@xml/backup_rules"
+37-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:16:9-54
+38        android:icon="@mipmap/ic_launcher"
+38-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:17:9-43
+39        android:label="@string/app_name"
+39-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:18:9-41
+40        android:networkSecurityConfig="@xml/network_security_config"
+40-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:23:9-69
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:19:9-54
+42        android:supportsRtl="true"
+42-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:20:9-35
+43        android:testOnly="true"
+44        android:theme="@style/Theme.CameraXGuide"
+44-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:21:9-50
+45        android:usesCleartextTraffic="true" >
+45-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:24:9-44
+46        <activity
+46-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:25:9-35:20
+47            android:name="com.plcoding.cameraApp.MainActivity"
+47-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:26:13-63
+48            android:exported="true"
+48-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:27:13-36
+49            android:label="@string/app_name"
+49-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:28:13-45
+50            android:theme="@style/Theme.CameraXGuide" >
+50-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:29:13-54
+51            <intent-filter>
+51-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:30:13-34:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:31:17-69
+52-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:31:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:33:17-77
+54-->C:\Users\khain\src\ICOOK\src\Android\CameraApp\app\src\main\AndroidManifest.xml:33:27-74
+55            </intent-filter>
+56        </activity>
+57        <activity
+57-->[androidx.compose.ui:ui-tooling-android:1.5.1] C:\Users\khain\.gradle\caches\transforms-3\be361bdfe5805d97254a29f975971db9\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+58            android:name="androidx.compose.ui.tooling.PreviewActivity"
+58-->[androidx.compose.ui:ui-tooling-android:1.5.1] C:\Users\khain\.gradle\caches\transforms-3\be361bdfe5805d97254a29f975971db9\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+59            android:exported="true" />
+59-->[androidx.compose.ui:ui-tooling-android:1.5.1] C:\Users\khain\.gradle\caches\transforms-3\be361bdfe5805d97254a29f975971db9\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+60        <activity
+60-->[androidx.compose.ui:ui-test-manifest:1.5.1] C:\Users\khain\.gradle\caches\transforms-3\7054571f4d20905c2080f90aac519ef3\transformed\ui-test-manifest-1.5.1\AndroidManifest.xml:23:9-25:39
+61            android:name="androidx.activity.ComponentActivity"
+61-->[androidx.compose.ui:ui-test-manifest:1.5.1] C:\Users\khain\.gradle\caches\transforms-3\7054571f4d20905c2080f90aac519ef3\transformed\ui-test-manifest-1.5.1\AndroidManifest.xml:24:13-63
+62            android:exported="true" />
+62-->[androidx.compose.ui:ui-test-manifest:1.5.1] C:\Users\khain\.gradle\caches\transforms-3\7054571f4d20905c2080f90aac519ef3\transformed\ui-test-manifest-1.5.1\AndroidManifest.xml:25:13-36
+63
+64        <uses-library
+64-->[androidx.camera:camera-extensions:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\6122e6ef8d9f31f278e53bce812ed0bf\transformed\camera-extensions-1.3.0-rc01\AndroidManifest.xml:29:9-31:40
+65            android:name="androidx.camera.extensions.impl"
+65-->[androidx.camera:camera-extensions:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\6122e6ef8d9f31f278e53bce812ed0bf\transformed\camera-extensions-1.3.0-rc01\AndroidManifest.xml:30:13-59
+66            android:required="false" />
+66-->[androidx.camera:camera-extensions:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\6122e6ef8d9f31f278e53bce812ed0bf\transformed\camera-extensions-1.3.0-rc01\AndroidManifest.xml:31:13-37
+67
+68        <service
+68-->[androidx.camera:camera-camera2:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\ddcfffe84f8e4d5ca1b92ec7fac85375\transformed\camera-camera2-1.3.0-rc01\AndroidManifest.xml:24:9-33:19
+69            android:name="androidx.camera.core.impl.MetadataHolderService"
+69-->[androidx.camera:camera-camera2:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\ddcfffe84f8e4d5ca1b92ec7fac85375\transformed\camera-camera2-1.3.0-rc01\AndroidManifest.xml:25:13-75
+70            android:enabled="false"
+70-->[androidx.camera:camera-camera2:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\ddcfffe84f8e4d5ca1b92ec7fac85375\transformed\camera-camera2-1.3.0-rc01\AndroidManifest.xml:26:13-36
+71            android:exported="false" >
+71-->[androidx.camera:camera-camera2:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\ddcfffe84f8e4d5ca1b92ec7fac85375\transformed\camera-camera2-1.3.0-rc01\AndroidManifest.xml:27:13-37
+72            <meta-data
+72-->[androidx.camera:camera-camera2:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\ddcfffe84f8e4d5ca1b92ec7fac85375\transformed\camera-camera2-1.3.0-rc01\AndroidManifest.xml:30:13-32:89
+73                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+73-->[androidx.camera:camera-camera2:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\ddcfffe84f8e4d5ca1b92ec7fac85375\transformed\camera-camera2-1.3.0-rc01\AndroidManifest.xml:31:17-103
+74                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+74-->[androidx.camera:camera-camera2:1.3.0-rc01] C:\Users\khain\.gradle\caches\transforms-3\ddcfffe84f8e4d5ca1b92ec7fac85375\transformed\camera-camera2-1.3.0-rc01\AndroidManifest.xml:32:17-86
+75        </service>
+76
+77        <provider
+77-->[androidx.emoji2:emoji2:1.4.0] C:\Users\khain\.gradle\caches\transforms-3\6f341ab93192e852dbeed143bf93c1b3\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+78            android:name="androidx.startup.InitializationProvider"
+78-->[androidx.emoji2:emoji2:1.4.0] C:\Users\khain\.gradle\caches\transforms-3\6f341ab93192e852dbeed143bf93c1b3\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+79            android:authorities="com.plcoding.cameraxguide.androidx-startup"
+79-->[androidx.emoji2:emoji2:1.4.0] C:\Users\khain\.gradle\caches\transforms-3\6f341ab93192e852dbeed143bf93c1b3\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+80            android:exported="false" >
+80-->[androidx.emoji2:emoji2:1.4.0] C:\Users\khain\.gradle\caches\transforms-3\6f341ab93192e852dbeed143bf93c1b3\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+81            <meta-data
+81-->[androidx.emoji2:emoji2:1.4.0] C:\Users\khain\.gradle\caches\transforms-3\6f341ab93192e852dbeed143bf93c1b3\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+82-->[androidx.emoji2:emoji2:1.4.0] C:\Users\khain\.gradle\caches\transforms-3\6f341ab93192e852dbeed143bf93c1b3\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+83                android:value="androidx.startup" />
+83-->[androidx.emoji2:emoji2:1.4.0] C:\Users\khain\.gradle\caches\transforms-3\6f341ab93192e852dbeed143bf93c1b3\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+84            <meta-data
+84-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\khain\.gradle\caches\transforms-3\05706c52ae833ebf0f1eeda857ac0c6e\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\khain\.gradle\caches\transforms-3\05706c52ae833ebf0f1eeda857ac0c6e\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+86                android:value="androidx.startup" />
+86-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\khain\.gradle\caches\transforms-3\05706c52ae833ebf0f1eeda857ac0c6e\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+89                android:value="androidx.startup" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+90        </provider>
+91
+92        <receiver
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+93            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+94            android:directBootAware="false"
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+95            android:enabled="true"
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+96            android:exported="true"
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+97            android:permission="android.permission.DUMP" >
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+99                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+102                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+105                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+108                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khain\.gradle\caches\transforms-3\94fdbf6b73f70b7cd36ac41b7050cd94\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+109            </intent-filter>
+110        </receiver>
+111    </application>
+112
+113</manifest>
