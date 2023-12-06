@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ff1ab82-e7ea-438c-a17f-499a1c8e58a6" name="Changes" comment="&quot;update&quot;">
-      <change beforePath="$PROJECT_DIR$/../CameraXGuide/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plcoding/cameraApp/FileApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/cameraApp/FileApi.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
