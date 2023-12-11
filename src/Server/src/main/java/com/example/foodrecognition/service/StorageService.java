@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.util.Optional;
 
 /**
@@ -21,10 +24,18 @@ public class StorageService {
     private StorageRepository repository;
 
     /*MultipartFile is used to in controller spring boot when upload image, file*/
-    public String uploadImage(MultipartFile file) throws IOException {
+    public String uploadImage(MultipartFile file, String uploadDirectory) throws IOException {
+        //save file to local
+        Path uploadPath = Path.of(uploadDirectory);
+        Path filePath = uploadPath.resolve(file.getName());
+        if(!Files.exists(uploadPath)){
+            Files.createDirectories(uploadPath);
+        }
+        Files.copy(file.getInputStream(), filePath, StandardCopyOption.REPLACE_EXISTING);
+
+        //save directory to db
         ImageData imageData = repository.save(ImageData.builder().name(file.getOriginalFilename())
-                        .type(file.getContentType()).
-                        imageData(ImageUtils.compressImage(file.getBytes())).build());
+                        .path(uploadDirectory).build());
 
         if (imageData != null){
             return "file upload successfully: "  + file.getOriginalFilename();
@@ -34,8 +45,10 @@ public class StorageService {
     }
 
     public byte[] downloadImage(String fileName){
-        Optional<ImageData> dbImageData = repository.findByName(fileName);
-        byte[] images = ImageUtils.decompressImage(dbImageData.get().getImageData());
-        return images;
+//        Optional<ImageData> dbImageData = repository.findByName(fileName);
+//        byte[] images = ImageUtils.decompressImage(dbImageData.get().getImageData());
+//        return images;
+        return null
+
     }
 }

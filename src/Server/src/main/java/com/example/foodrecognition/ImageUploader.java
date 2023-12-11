@@ -6,14 +6,14 @@ import java.net.URL;
 
 public class ImageUploader {
 
-    public static void main(String[] args)   {
+    public String uploadOnFastApi(String pathFastApi)   {
 
         try {
             // Chuỗi bạn muốn gửi
             String postData = "C:\\Users\\khain\\.vsStudio\\src\\vscode\\FastApi\\images\\banhxeo.jpg";
 
             // URL của API FastAPI để nhận chuỗi
-            String fastApiUrl = "http://127.0.0.1:8000/upload"; // Thay thế bằng đường dẫn tới endpoint của bạn
+            String fastApiUrl = "https://127.0.0.1:8000/upload";
 
             // Tạo URL object
             URL url = new URL(fastApiUrl);
