@@ -1,10 +1,13 @@
 package com.example.foodrecognition.entity;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * ImageData is table in db: foodrecognition
@@ -17,13 +20,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ImageData {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
     private String name;
-    private String type;
 
-    @Lob
-    @Column (name = "imageData", length = 1000)
-    private byte[] imageData;
+    private String path;
 }

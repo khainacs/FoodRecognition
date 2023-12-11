@@ -17,9 +17,11 @@ public class ImageDataController {
     @Autowired
     private StorageService service;
 
+    private static final String uploadDirectory = "C:/Users/khain/OneDrive/Pictures";
+
     @PostMapping
     public ResponseEntity<?> uploadImage(@RequestParam("image") MultipartFile file) throws IOException {
-        String uploadImage = service.uploadImage(file);
+        String uploadImage = service.uploadImage(file, uploadDirectory);
 
         return ResponseEntity.status(HttpStatus.OK).body(uploadImage);
     }
