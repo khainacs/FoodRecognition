@@ -1,49 +1,51 @@
 package com.example.foodrecognition;
 
+import org.springframework.stereotype.Service;
+
 import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
+@Service
 public class ImageUploader {
 
-    public static void main(String args)   {
-
+    /* URL fast api */
+    private static final String fastApiUrl = "http://127.0.0.1:8000/process_string";
+    public String uploadOnFastApi(String filePath)   {
+        HttpURLConnection connection = null;
         try {
-            // Chuỗi bạn muốn gửi
-            String postData = "C:\\Users\\khain\\.vsStudio\\src\\vscode\\FastApi\\images\\banhxeo.jpg";
-
-            // URL của API FastAPI để nhận chuỗi
-            String fastApiUrl = "http://127.0.0.1:8000/upload"; // Thay thế bằng đường dẫn tới endpoint của bạn
-
-            // Tạo URL object
             URL url = new URL(fastApiUrl);
 
-            // Tạo HttpURLConnection object
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection = (HttpURLConnection) url.openConnection();
 
-            // Đặt phương thức yêu cầu là POST
             connection.setRequestMethod("POST");
 
-            // Kích thước của dữ liệu bạn đang gửi (ở đây là độ dài của chuỗi)
             connection.setDoOutput(true);
 
-            // Gửi dữ liệu
-            try (OutputStream os = connection.getOutputStream()) {
-                byte[] input = postData.getBytes("utf-8");
-                os.write(input, 0, input.length);
+            // send information
+            //send image
+//            try (OutputStream os = connection.getOutputStream()) {
+//                byte[] input = filePath.getBytes("utf-8");
+//                os.write(input, 0, input.length);
+//            }
+
+            try (OutputStream os = connection.getOutputStream();
+                 PrintWriter writer = new PrintWriter(os, true, StandardCharsets.UTF_8)) {
+                writer.println(filePath);
             }
 
-            // Lấy mã trạng thái từ phản hồi
+            // send respone
             int responseCode = connection.getResponseCode();
-            System.out.println("Status code: " + responseCode);
+            String resultRespone =("Status code: " + responseCode);
 
-            // Đọc phản hồi từ server
-            // ...
-
-            // Đóng kết nối
-            connection.disconnect();
+            return resultRespone;
         } catch (Exception e) {
             e.printStackTrace();
+            return null;
+        }finally {
+            connection.disconnect();;
         }
     }
 

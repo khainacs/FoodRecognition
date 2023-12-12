@@ -1,5 +1,6 @@
 package com.example.foodrecognition.entity;
 
+import com.example.foodrecognition.ImageUploader;
 import com.example.foodrecognition.service.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

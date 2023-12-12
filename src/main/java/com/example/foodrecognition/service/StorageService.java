@@ -1,5 +1,6 @@
 package com.example.foodrecognition.service;
 
+import com.example.foodrecognition.ImageUploader;
 import com.example.foodrecognition.entity.ImageData;
 import com.example.foodrecognition.repository.StorageRepository;
 import com.example.foodrecognition.util.ImageUtils;
@@ -23,13 +24,16 @@ public class StorageService {
     @Autowired
     private StorageRepository repository;
 
+    @Autowired
+    private ImageUploader imageUploader;
     /*MultipartFile is used to in controller spring boot when upload image, file*/
     public String uploadImage(MultipartFile file, String uploadDirectory) throws IOException {
-        //save file in local
         Path uploadPath = Path.of(uploadDirectory);
-        Path filePath = uploadPath.resolve(file.getName());
 
-        if(!Files.exists(uploadPath)){
+        //this file's directory from root to file's name
+        Path filePath = uploadPath.resolve(file.getOriginalFilename());
+
+        if(!Files.exists(filePath)){
             Files.createDirectories(uploadPath);
         }
 
@@ -39,16 +43,20 @@ public class StorageService {
         ImageData imageData = repository.save(ImageData.builder().name(file.getOriginalFilename())
                         .path(uploadDirectory).build());
 
+        imageUploader.uploadOnFastApi(filePath.toString());
+
         if (imageData != null){
             return "file upload successfully: "  + file.getOriginalFilename();
         }
+
         return null;
 
     }
 
     public byte[] downloadImage(String fileName){
-        Optional<ImageData> dbImageData = repository.findByName(fileName);
-        byte[] images = ImageUtils.decompressImage(dbImageData.get().getImageData());
-        return images;
+//        Optional<ImageData> dbImageData = repository.findByName(fileName);
+//        byte[] images = ImageUtils.decompressImage(dbImageData.get().getImageData());
+//        return images;
+        return null;
     }
 }
