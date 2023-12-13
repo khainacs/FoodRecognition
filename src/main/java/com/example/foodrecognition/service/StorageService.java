@@ -34,22 +34,22 @@ public class StorageService {
         Path filePath = uploadPath.resolve(file.getOriginalFilename());
 
         if(!Files.exists(filePath)){
-            Files.createDirectories(uploadPath);
+            Files.createDirectories(filePath);
         }
 
         Files.copy(file.getInputStream(), filePath, StandardCopyOption.REPLACE_EXISTING);
 
         //save path on db
         ImageData imageData = repository.save(ImageData.builder().name(file.getOriginalFilename())
-                        .path(uploadDirectory).build());
+                .path(uploadDirectory).build());
 
-        imageUploader.uploadOnFastApi(filePath.toString());
+        return imageUploader.uploadOnFastApi(filePath.toString());
 
-        if (imageData != null){
-            return "file upload successfully: "  + file.getOriginalFilename();
-        }
-
-        return null;
+//        if (imageData != null){
+//            return "file upload successfully: "  + file.getOriginalFilename();
+//        }
+//
+//        return null;
 
     }
 
