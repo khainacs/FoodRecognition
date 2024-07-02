@@ -1,6 +1,9 @@
 package com.example.foodrecognition.entity;
 
-import jakarta.persistence.*;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,13 +20,8 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ImageData {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
     private String name;
-    private String type;
 
-    @Lob
-    @Column (name = "imageData", length = 1000)
-    private byte[] imageData;
+    private String path;
+
 }

@@ -1,5 +1,6 @@
 package com.example.foodrecognition.entity;
 
+import com.example.foodrecognition.ImageUploader;
 import com.example.foodrecognition.service.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,9 +18,11 @@ public class ImageDataController {
     @Autowired
     private StorageService service;
 
+    private static final String uploadDirectory = "C:/Users/khain/OneDrive/Pictures";
+
     @PostMapping
     public ResponseEntity<?> uploadImage(@RequestParam("image") MultipartFile file) throws IOException {
-        String uploadImage = service.uploadImage(file);
+        String uploadImage = service.uploadImage(file, uploadDirectory);
 
         return ResponseEntity.status(HttpStatus.OK).body(uploadImage);
     }

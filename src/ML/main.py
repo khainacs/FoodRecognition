@@ -1,6 +1,6 @@
-from msilib import type_string
 import shutil
-from fastapi import FastAPI, Request, UploadFile, File
+from classifier import Classifier
+from fastapi import FastAPI, Request, HTTPException, Body
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
@@ -21,24 +21,19 @@ app.mount("/images", StaticFiles(directory="images"), name="images")
 def home(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
  
-@app.post("/upload")
-def uploads( file = UploadFile(...)):
-    try:
-       
-        with open(file.filename, 'wb') as f:
-            shutil.copyfileobj(file.file, f)
-    except Exception:
-        return {"message": "There was an error uploading the file"}
-    finally:
-        file.close()
-        return {"message": f"Successfully uploaded  {file.filename}"}
-        
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+    price: float
+    tax: float | None = None
+    tags: list[str] = []
     
-# @app.post("/upload")
-# async def uploads(request: Request):
-#     path = await request.body()
-#     image = Image.open(path)
-#     file = UploadFile(image)
-#     print(path)
-#     return {"message": f"Successfully uploaded" }
+@app.post("/upload")
+async def uploads(path: Request):
+    classifier = Classifier()
+    json_data = await path.json()
+    output = classifier.infer(json_data)
+    return output
+
+    
     

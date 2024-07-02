@@ -1,50 +1,37 @@
 package com.example.foodrecognition;
 
+import com.google.gson.Gson;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import org.springframework.stereotype.Service;
+
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import static io.restassured.RestAssured.given;
+@Service
 public class ImageUploader {
-
-    public static void main(String[] args)   {
-
+    private static final String fastApiUrl = "http://127.0.0.1:8000/upload";
+    public String uploadOnFastApi(String filePath) {
         try {
-            // Chuỗi bạn muốn gửi
-            String postData = "C:\\Users\\khain\\.vsStudio\\src\\vscode\\FastApi\\images\\banhxeo.jpg";
+            Gson gson = new Gson();
+            String payload = gson.toJson(filePath);
+            Response response = given()
+                    .contentType(ContentType.JSON)
+                    .body(payload)
+                    .post(fastApiUrl);
 
-            // URL của API FastAPI để nhận chuỗi
-            String fastApiUrl = "http://127.0.0.1:8000/upload"; // Thay thế bằng đường dẫn tới endpoint của bạn
 
-            // Tạo URL object
-            URL url = new URL(fastApiUrl);
-
-            // Tạo HttpURLConnection object
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
-            // Đặt phương thức yêu cầu là POST
-            connection.setRequestMethod("POST");
-
-            // Kích thước của dữ liệu bạn đang gửi (ở đây là độ dài của chuỗi)
-            connection.setDoOutput(true);
-
-            // Gửi dữ liệu
-            try (OutputStream os = connection.getOutputStream()) {
-                byte[] input = postData.getBytes("utf-8");
-                os.write(input, 0, input.length);
-            }
-
-            // Lấy mã trạng thái từ phản hồi
-            int responseCode = connection.getResponseCode();
-            System.out.println("Status code: " + responseCode);
-
-            // Đọc phản hồi từ server
-            // ...
-
-            // Đóng kết nối
-            connection.disconnect();
+            String resultRespone =("Status code: " + response.asString());
+            System.out.println(resultRespone);
+            return resultRespone;
         } catch (Exception e) {
             e.printStackTrace();
+        }finally {
+            //connection.disconnect();;
         }
+        return null;
     }
 
 }
